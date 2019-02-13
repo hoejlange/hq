@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+    <title>Ansøg om at spille</title>
+    <meta name="description" content="Hvis du har lyst til at spille en koncert på Headquarters, har vi lavet en bookingformular, der vil hjælpe jer og os, til at få de præcise informationer, der skal bruges til at komme godt fra start. ">
+    
+    <meta name="keywords" content="koncerter, musik, dans, dj, bar, natklub, aarhus, live, soul, disco, funk, drinks">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logosort.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+
+<body class="hqbody">
+    <header>
+        <div class="nav" id="mynav">
+            <div class="dropdown">
+                <a href="#" class="dropknap">OM
+                </a>
+                <div class="dropdown-content">
+                    <a href="omhq.html">OM HQ</a>
+                    <a href="borabora.html">BORA BORA</a>
+                    <a href="kulturportalen.html">KULTURPORTALEN</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropknap">PROGRAM
+                </a>
+                <div class="dropdown-content">
+                    <a href="alleevents.html">ALLE EVENTS</a>
+                    <a href="#">LIVE</a>
+                    <a href="#">DJ'S</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropknap">PRISER
+                </a>
+            </div>
+
+            <a href="index.html" id="logobox"><img id="hqlogo" src="images/hqlogo.png" alt=""></a>
+            <div class="dropdown">
+                <a href="#" class="dropknap">GALLERI
+                </a>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropknap">KONTAKT
+
+                </a>
+                <div class="dropdown-content">
+                    <a href="kontakt.html">HQ KONTAKT / ÅBNINGSTIDER / PRESSE</a>
+                    <a href="ansoeg.html">ANSØG OM AT SPILLE</a>
+                    <a href="techspec.html">TECH SPEC</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <input class="dropknap searchicon" type="text" name="search" placeholder="SØG">
+            </div>
+
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+            <a href="index.html" class="moblogo" onclick="myFunction()"> <img class="mobhqlogo" src="images/logohvid.png" alt=""> </a>
+        </div>
+
+    </header>
+
+
+
+
+
+    <main class="hqmain">
+
+
+        <article class="omhq">
+            <h1>ANSØG OM AT SPILLE / BOOKING</h1>
+
+            <img src="images/ansoeg.jpg" alt="">
+
+            <h1>Spil På HeadQuarters</h1>
+            
+            <p>
+                På HeadQuarters elsker vi ny musik og tager musikken meget seriøst. HQ præsenterer, som udgangspunkt, kun originalmusik på livescenen. Vi arrangerer selv de fleste koncerter, men har også samarbejder med byens koncertarrangører, og er altid åbne for nye samarbejder. <br><br>
+
+                Når du/I som band vælger at tage skridtet og udfylde vores bookingformular og dermed ansøge om at blive booket hos os, bør du/I dermed også være opmærksomme på vores samarbejdsmodel. Vi går nemlig meget op i, at det skal være en fantastisk og sjov oplevelse, at spille på HeadQuarters. Det er ikke sjovt, for selv den bedste musiker, at spille foran blot en håndfuld mennesker.<br><br>
+
+                At sende en mail med ekstensive beskrivelser af bandets forståelse af musikken, historik, samt deltagelse i Karrierekanonen og et par episke optrædener på et par andre spillesteder, er derfor ikke nødvendigvis vejen frem hos os. Altsammen er helt awesome, og vi bifalder enhver indsats som man gør sig som musiker for at komme ud at spille – men I er ikke alene og det er ikke et kvalitetsstempel i sig selv.<br><br>
+
+                Vi vil derfor hellere høre om jeres fanbase, jeres publikum, jeres aktive arbejde for at bygge et follow og jeres konkrete idéer til at gøre dette show unikt og velbesøgt. Herunder gerne hvilke andre bands I vil slå jer sammen med, hvilke kommunikationskanaler I bruger osv.<br><br>
+
+                Derfor har vi lavet en bookingformular, der vil hjælpe jer og os, til at få de præcise informationer, der skal bruges til at komme godt fra start.<br><br>
+
+                HeadQuarters er et privat spillested og arbejdsplads for mere end 20 ansatte. Økonomien er på HQ udelukkende baseret på indtjeningen i baren, og er dermed helt seperat fra scenen.<br><br>
+
+                HQ laver/promoter ca. 200 shows om året. Derfor skal der lægges fælles kræfter i en koncert. Der skal arbejdes benhårdt, dedikeret og ikke mindst struktureret, for at sikre en god og succesfuld aften.<br><br>
+
+                Vi glæder os rigtig meget til at høre fra dig/jer!
+            </p>
+
+
+        </article>
+
+
+
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/HeadQuartersDK/" target="_blank">
+            <img src="images/facebook.png" alt="facebooklogo">
+        </a>
+        <a href="https://www.instagram.com/hqaarhus/?hl=da" target="_blank">
+            <img src="images/instagram.png" alt="instagramlogo">
+        </a>
+
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mynav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+
+        // When the user scrolls down 50px from the top of the document, resize the logo's size
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("hqlogo").style.width = "60px";
+                document.getElementById("hqlogo").style.height = "60px";
+                document.getElementById("hqlogo").style.marginTop = "-50px";
+
+
+            } else {
+                document.getElementById("hqlogo").style.width = "140px";
+                document.getElementById("hqlogo").style.height = "140px";
+                document.getElementById("hqlogo").style.marginTop = "10px";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
