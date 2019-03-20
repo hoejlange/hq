@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+    <title>Om HQ</title>
+    
+    <meta name="description" content="HeadQuarters er en bar i Aarhus, hvor god musik, dejlige oplevelser og en hyggelig atmosfære er i højsædet. Der er flere koncerter hver uge. Hver torsdag, fredag og lørdag er der natklup ">
+     <meta name="keywords" content="koncerter, musik, dans, dj, bar, natklub, aarhus, live, soul, disco, funk, drinks">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logosort.png" type="image/png" sizes="16x16">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+
+<body class="hqbody">
+    <header>
+        <div class="nav" id="mynav">
+            <div class="dropdown">
+                <a href="#" class="dropknap">OM
+                </a>
+                <div class="dropdown-content">
+                    <a href="omhq.html">OM HQ</a>
+                    <a href="borabora.html">BORA BORA</a>
+                    <a href="kulturportalen.html">KULTURPORTALEN</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropknap">PROGRAM
+                </a>
+                <div class="dropdown-content">
+                    <a href="alleevents.html">ALLE EVENTS</a>
+                    <a href="#">LIVE</a>
+                    <a href="#">DJ'S</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropknap">PRISER
+                </a>
+            </div>
+
+            <a href="index.html" id="logobox"><img id="hqlogo" src="images/hqlogo.png" alt=""></a>
+            <div class="dropdown">
+                <a href="#" class="dropknap">GALLERI
+                </a>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropknap">KONTAKT
+
+                </a>
+                <div class="dropdown-content">
+                    <a href="kontakt.html">HQ KONTAKT / ÅBNINGSTIDER / PRESSE</a>
+                    <a href="ansoeg.html">ANSØG OM AT SPILLE</a>
+                    <a href="techspec.html">TECH SPEC</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <input class="dropknap searchicon" type="text" name="search" placeholder="SØG">
+            </div>
+
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+            <a href="index.html" class="moblogo" onclick="myFunction()"> <img class="mobhqlogo" src="images/logohvid.png" alt=""> </a>
+        </div>
+
+    </header>
+
+
+
+
+
+    <main class="hqmain">
+
+
+        <article class="omhq">
+            <h1>OM HQ</h1>
+            <p>
+                HeadQuarters er en oase i Aarhus, hvor god musik, dejlige oplevelser og en hyggelig atmosfære er i højsædet. <br><br>
+
+                Hver uge er der et væld af koncerter med primært fokus på ny original musik. <br><br>
+
+                Torsdag, fredag og lørdag er der autentisk natklub, hvor man let bliver ført tilbage til de originale discotheques hvor der danses løs hele natten. Her er det med afsæt i tanken om at musik ikke kun er
+                det du ved du gerne vil høre, men også det du ikke vidste du gerne ville høre. HQ, som stedet også kaldes, har som natklub ofte et musikalsk afsæt i soul, funk og disco, hvilket man også hurtigt
+                fornemmer når man træder ind i de fysiske rammer, der emmer af 60’erne og 70’erne.
+                <br><br>
+                Med sin afslappede stemning, et udvalg af lækre drikkevarer til rimelige priser, komfortable hyggehjørner og venlig betjening, stiller HQ rammerne for en god aften. <br><br>
+            </p>
+
+
+        </article>
+
+        <img src="images/omhq1.jpg" alt="">
+        <img src="images/omhq2.jpg" alt="">
+        <img src="images/omhq3.jpg" alt="">
+
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/HeadQuartersDK/" target="_blank">
+            <img src="images/facebook.png" alt="facebooklogo">
+        </a>
+        <a href="https://www.instagram.com/hqaarhus/?hl=da" target="_blank">
+            <img src="images/instagram.png" alt="instagramlogo">
+        </a>
+
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mynav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+
+        // When the user scrolls down 50px from the top of the document, resize the logo's size
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("hqlogo").style.width = "60px";
+                document.getElementById("hqlogo").style.height = "60px";
+                document.getElementById("hqlogo").style.marginTop = "-50px";
+
+
+            } else {
+                document.getElementById("hqlogo").style.width = "140px";
+                document.getElementById("hqlogo").style.height = "140px";
+                document.getElementById("hqlogo").style.marginTop = "10px";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

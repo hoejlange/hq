@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+    <title>Tech Spec</title>
+    <meta name="description" content="Headquarters tekniske specifikationer">
+    <meta name="keywords" content="lyd, teknik, kapler, ledninger, forstærkere">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logosort.png" type="image/png" sizes="16x16">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+
+<body class="hqbody">
+    <header>
+        <div class="nav" id="mynav">
+            <div class="dropdown">
+                <a href="#" class="dropknap">OM
+                </a>
+                <div class="dropdown-content">
+                    <a href="omhq.html">OM HQ</a>
+                    <a href="borabora.html">BORA BORA</a>
+                    <a href="kulturportalen.html">KULTURPORTALEN</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropknap">PROGRAM
+                </a>
+                <div class="dropdown-content">
+                    <a href="alleevents.html">ALLE EVENTS</a>
+                    <a href="#">LIVE</a>
+                    <a href="#">DJ'S</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropknap">PRISER
+                </a>
+            </div>
+
+            <a href="index.html" id="logobox"><img id="hqlogo" src="images/hqlogo.png" alt=""></a>
+            <div class="dropdown">
+                <a href="#" class="dropknap">GALLERI
+                </a>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropknap">KONTAKT
+
+                </a>
+                <div class="dropdown-content">
+                    <a href="kontakt.html">HQ KONTAKT / ÅBNINGSTIDER / PRESSE</a>
+                    <a href="ansoeg.html">ANSØG OM AT SPILLE</a>
+                    <a href="techspec.html">TECH SPEC</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <input class="dropknap searchicon" type="text" name="search" placeholder="SØG">
+            </div>
+
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+            <a href="index.html" class="moblogo" onclick="myFunction()"> <img class="mobhqlogo" src="images/logohvid.png" alt=""> </a>
+        </div>
+
+    </header>
+
+
+
+
+    <main class="hqmain">
+
+
+        <article class="omhq">
+            <h1>HQ TECH SPEC</h1>
+            
+            <img src="images/techspec.png" alt="">
+            
+            
+            
+            
+          
+
+
+        </article>
+
+        
+
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/HeadQuartersDK/" target="_blank">
+            <img src="images/facebook.png" alt="facebooklogo">
+        </a>
+        <a href="https://www.instagram.com/hqaarhus/?hl=da" target="_blank">
+            <img src="images/instagram.png" alt="instagramlogo">
+        </a>
+
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mynav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+
+        // When the user scrolls down 50px from the top of the document, resize the logo's size
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("hqlogo").style.width = "60px";
+                document.getElementById("hqlogo").style.height = "60px";
+                document.getElementById("hqlogo").style.marginTop = "-50px";
+
+
+            } else {
+                document.getElementById("hqlogo").style.width = "140px";
+                document.getElementById("hqlogo").style.height = "140px";
+                document.getElementById("hqlogo").style.marginTop = "10px";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

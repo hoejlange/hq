@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+    <title>Kulturportalen</title>
+    <meta name="description" content="Aarhus’ kulturinstitutioner er gået sammen om at lave deres egen online platform, som kan give dig et overblik over byens sprudlende udvalg af arrangementer.">
+     <meta name="keywords" content="teatre, museer, koncerthuse, kulturportal">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logosort.png" type="image/png" sizes="16x16">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+</head>
+
+<body class="hqbody">
+    <header>
+        <div class="nav" id="mynav">
+            <div class="dropdown">
+                <a href="#" class="dropknap">OM
+                </a>
+                <div class="dropdown-content">
+                    <a href="omhq.html">OM HQ</a>
+                    <a href="borabora.html">BORA BORA</a>
+                    <a href="kulturportalen.html">KULTURPORTALEN</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropknap">PROGRAM
+                </a>
+                <div class="dropdown-content">
+                    <a href="alleevents.html">ALLE EVENTS</a>
+                    <a href="#">LIVE</a>
+                    <a href="#">DJ'S</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropknap">PRISER
+                </a>
+            </div>
+
+            <a href="index.html" id="logobox"><img id="hqlogo" src="images/hqlogo.png" alt=""></a>
+            <div class="dropdown">
+                <a href="#" class="dropknap">GALLERI
+                </a>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropknap">KONTAKT
+
+                </a>
+                <div class="dropdown-content">
+                    <a href="kontakt.html">HQ KONTAKT / ÅBNINGSTIDER / PRESSE</a>
+                    <a href="ansoeg.html">ANSØG OM AT SPILLE</a>
+                    <a href="techspec.html">TECH SPEC</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <input class="dropknap searchicon" type="text" name="search" placeholder="SØG">
+            </div>
+
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+            <a href="index.html" class="moblogo" onclick="myFunction()"> <img class="mobhqlogo" src="images/logohvid.png" alt=""> </a>
+        </div>
+
+    </header>
+
+
+
+
+    <main class="hqmain">
+
+
+        <article class="omhq">
+            <h1>Kulturportalen</h1>
+            <img src="images/Kulturportalen.jpg" alt="">
+            <p>
+                <a href="www.kulturportalen.dk"><b>www.kulturportalen.dk</b></a> <br><br>
+
+                Stedet der samler kulturen <br>
+                Hver eneste uge er der en utal af spændende arrangementer i Aarhus. Rundt omkring i byen findes nogle af landets absolut bedste teatre, museer og koncerthuse, som alle byder på spændende aktiviteter for hver en smag. Men nogle gange kan man hurtigt miste overblikket i havet af spændende kulturtilbud. Dét vil Kulturportalen lave om på.<br><br>
+
+                For første gang nogensinde er Aarhus’ kulturinstitutioner gået sammen om at lave deres egen online platform, som kan give dig et overblik over byens sprudlende udvalg af arrangementer. En let måde, hvorpå du kan finde og planlægge ud fra, hvilke arrangementer der passer netop dig, afhængigt af din interesse og smag. Alt sammen hjemme fra din computer eller mobil.<br><br>
+
+                Et utraditionelt samarbejde <br>
+                I Aarhus er kulturinstitutionerne ikke konkurrenter, men derimod samarbejdspartnere om at gøre kulturlivet i byen til landets bedste – med store forestillinger, sensationelle arrangementer og unikke udstillinger af international kaliber. Her kan både nye og etablerede kulturgængere få et overblik over vivaret af oplevelser. <br><br>
+
+                Kulturportalen får spinoff under Aarhus Kulturhovedstad 2017, men fortsætter herefter med at tilbyde et overblik over spændende, kulturelle oplevelser og højdepunkter for byens indbyggere og besøgende. <br><br>
+
+                Har du input til Kulturportalen, er du velkommen til at tage fat i Aarhus Panorama, der står for driften af siden. Du kan ringe til dem på 8897 7070 eller sende en mail til hej@kulturportalen.dk.
+            </p>
+
+
+        </article>
+
+
+
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/HeadQuartersDK/" target="_blank">
+            <img src="images/facebook.png" alt="facebooklogo">
+        </a>
+        <a href="https://www.instagram.com/hqaarhus/?hl=da" target="_blank">
+            <img src="images/instagram.png" alt="instagramlogo">
+        </a>
+
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mynav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+
+        // When the user scrolls down 50px from the top of the document, resize the logo's size
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("hqlogo").style.width = "60px";
+                document.getElementById("hqlogo").style.height = "60px";
+                document.getElementById("hqlogo").style.marginTop = "-50px";
+
+
+            } else {
+                document.getElementById("hqlogo").style.width = "140px";
+                document.getElementById("hqlogo").style.height = "140px";
+                document.getElementById("hqlogo").style.marginTop = "10px";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
